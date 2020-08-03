@@ -1,0 +1,44 @@
+public class outsideloop{
+  public static void main(String[] args){
+    int []a= {5,7,8,9,10}; //array size 5
+    print(a); //here print is a static method 
+    
+    
+ }
+  
+  public static void print(int[] o) //in print method the output is printed.
+  //o is a parameter of a
+  
+  
+  {
+  for(int x:o){
+     System.out.println(x); 
+   
+     //in a short way initialized x and it will print the every element thaat are available in array
+ }
+}
+}
+
+
+
+
+public class outsideloop{
+  public static void main(String[] args){
+    int []a= {5,7,8,9,10}; //array size 5
+    print(a); //this method will print 5 7 8 9 10
+    System.out.println(a[1]); //this will print 500 at the place of 7
+    
+    
+ }
+  
+  public static void print(int[] o){
+  for(int x:o){
+     System.out.println(x); 
+      
+   
+     //in a short way initialized x and it will print the every element thaat are available in array
+ }
+   o[1]=500; //o and a are located to the same array.
+}
+}
+ 
