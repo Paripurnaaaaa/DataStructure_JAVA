@@ -1,0 +1,23 @@
+
+#out_of_place_approch
+
+public class OutofPlaceapproch{
+  public static void main(String[] args){
+    int []approch= {10,20,30,40,50}; //we want approch to become 50 40 30 20 10
+   approch=reverse(approch);
+    
+    
+ }  //a is approch the iniial array
+ //dest is the detination where the reverse array will be saved
+  
+  public static int[] reverse(int[] a){ //here reverse is a method and a is az parameter of approch
+    int []dest= new int[a.length]; //here new array is created same length as approch name dest
+  for(int i=0, j=dest.length-1; i<a.length; i++, j--){
+     dest[j]=a[i]; //elements of approch is saving the new array dest
+      
+  
+ }
+return dest; 
+}
+}
+//as this reverse occurs outside of an array that's why it is known as out of place approch
