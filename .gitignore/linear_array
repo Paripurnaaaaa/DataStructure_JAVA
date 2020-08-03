@@ -1,0 +1,24 @@
+.#revesing_array_in_place
+
+
+public class InPlaceapproch{
+  public static void main(String[] args){
+    int []source= {10,20,30,40,50}; //we want approch to become 50 40 30 20 10
+   reverse(source);
+    
+    
+ }
+  
+ public static void reverse(int[] a){
+    
+  for(int i=0, j=a.length-1; i<j; i++, j--) //i<j is works for both odd and even
+  {
+    int temp= a[j]; //temp created as temporary array to save the element so it dontt go lost
+     a[j]=a[i]; 
+     a[i]=temp;
+      
+  
+ }
+
+}
+}
