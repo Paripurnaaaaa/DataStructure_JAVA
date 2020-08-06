@@ -1,0 +1,51 @@
+#Right Shift and Rotate by K placed
+
+
+public class rightShift{
+  public static void main(String[] args){
+    int []source= {10,20,30,40,50}; //we want approch to become 50 40 30 20 10
+   rightshift(source,2);
+   }
+  
+ public static void rightshift(int[] a, int l){ //a is the parameter of source, l papameter of 2
+    
+  for(int i=a.length-1; i>=l; i--){
+a[i]=a[i-l]; 
+    }
+  for(int i=0;i<l;i++){ // as elements shifted towards right then the index will be 0
+  a[i]=0;
+  
+  }
+   for(int x: a){
+     System.out.println(x);
+}
+}
+}
+
+
+##Rotate_by_K_placed
+public class rightRotate{
+  public static void main(String[] args){
+    int []source= {10,20,30,40,50}; //we want approch to become 50 40 30 20 10
+   rightrotate(source,3);
+   
+    
+    
+ }
+  
+ public static void rightrotate(int[] a, int l){ //a is the parameter of source, l papameter of 2
+    
+  for(int i=a.length-1; i>=l; i--){
+    int temp=a[i]; // created a temporary array to save the elements before shifting right
+    a[i]=a[i-l]; 
+     a[i-l]=temp;
+     
+  
+ }
+  
+   for(int x: a){
+     System.out.println(x);
+}
+}
+}
+ 
