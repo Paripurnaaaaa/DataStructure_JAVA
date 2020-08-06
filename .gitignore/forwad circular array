@@ -1,0 +1,22 @@
+#basic_circular_array
+
+
+public class cir{
+  public static void main(String[] args){
+    int [] arr={60,40,0,0,90,80}; // here arrary length is 7 but its size is 4 as it is containing 4 non-zero elements    
+    print(arr, 4, 4);             //here we are passing the parametre to the print() methode where arr is the array, 
+                                  //4 is the starting value (starts from 4th index and travell through the whole array cicularly) and 2nd 4 is the size of the array
+  }
+  
+  public static void print( int[] arr, int start, int size){ 
+    int index=start;
+    for(int i=0;i<size; i++){ //array length is here 6 if we use i<arr.length then the loop will run for 6 time. waste of time. 
+                                 //here we have used size to make sure the loop run equal to size means element is 4 and loop run for 4 time
+    System.out.println(arr[index]);
+    index=index+1;
+    if(index==arr.length){ //sends the index to the starting index as it reached the (arr.length-1)
+      index=0;
+    }
+    }
+  }
+}
