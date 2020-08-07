@@ -1,0 +1,34 @@
+#Basic_linked_list
+
+//Node class of main class called here as a parameter
+public class Node{
+Object element; //value to store
+Node next;//link to the next node
+
+//constructer
+public Node( Object e,Node n){
+ element =e;
+ next=n;
+ System.out.println(e);
+ 
+
+
+}
+}
+
+//Main clas
+public class createrList{
+  public static void main(String [] args){
+  
+  Node head=null;//starting the first node
+  Node n1= new Node ("11",null); //creating nodes
+  Node n2= new Node ("22", n1);
+   n1.next=n2;
+  
+//assigning the head reference here in the list
+  head=n1;
+
+  
+  }
+
+}
