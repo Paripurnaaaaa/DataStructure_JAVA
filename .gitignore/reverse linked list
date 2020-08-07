@@ -1,0 +1,31 @@
+public class reverseList{
+  public static void main(String [] args){
+  
+  Node head=null;//starting the first node
+  Node n5= new Node ("55",null); //creating nodes
+  Node n4= new Node ("44", n5);
+  Node n3= new Node ("33", n4);
+    Node n2= new Node ("22", n3);
+    Node n1= new Node ("11", n2);
+ 
+  
+//assigning the head reference here in the list
+  head=n1;
+  
+  }
+
+}
+
+public class Node{
+Object element; //value to store
+Node next;//link to the next node
+
+//constructer
+public Node( Object e,Node n){
+ element =e;
+ next=n;
+ 
+System.out.println(e);
+
+}
+}
