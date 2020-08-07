@@ -1,0 +1,41 @@
+#Iterating_elements_in_linked_list
+  public class Node{
+Object element; //value to store
+Node next;//link to the next node
+
+//constructer
+public Node( Object e,Node n){
+ element =e;
+ next=n;
+ 
+System.out.println(e);
+
+}
+}
+
+
+public class iteratingelement{
+  public static void main(String [] args){
+  
+     Node head=null;
+   
+  //starting the first node
+  Node n5= new Node ("55",null); //creating nodes
+  Node n4= new Node ("44", head);
+  Node n3= new Node ("33", n4);
+    Node n2= new Node ("22", n3);
+    head= new Node ("11", n2);
+ 
+  
+//assigning the head reference here in the list
+  
+  
+  for (Node n=head; n!=null; n=n.next)
+  {
+  System.out.println(n.element);
+  
+  }
+  
+  }
+
+}
